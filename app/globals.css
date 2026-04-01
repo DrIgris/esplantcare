@@ -8,13 +8,16 @@
   --color-panel: #F0EFE8;
   --color-special-panel: #EAF3DE;
 
+  --color-text-title: #639922;
   --color-text-primary: #2C2C2A;
   --color-text-secondary: #5F5E5A;
 
   --color-border: #D3D1C7;
 
-  --color-button-primary: #639922;
-  --color-button-secondary: #3B6D11;
+  --color-button-primary: #73ad2d;
+  --color-button-secondary: #558a29;
+
+  --color-opacit-text: rgba(95, 94, 90, 0.6);
 
   --color-moisture-wet: #E6F1FB;
   --color-moisture-optimal: #EAF3DE;

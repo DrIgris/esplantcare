@@ -3,13 +3,13 @@ import { Cormorant, Mulish } from "next/font/google";
 import "./globals.css";
 
 const cormorant = Cormorant({
-  weight: ['600'],
+  weight: ['300', '400', '500', '600', '700'],
   subsets: ['latin'],
   variable: '--font-heading',
 })
 
 const mulish = Mulish({
-  weight: ['300'],
+  weight: ['300', '400', '500', '600'],
   subsets: ['latin'],
   variable: '--font-body',
 })
