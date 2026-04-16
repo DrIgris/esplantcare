@@ -11,18 +11,23 @@
   --color-text-title: #639922;
   --color-text-primary: #2C2C2A;
   --color-text-secondary: #5F5E5A;
+  --color-text-important: #A94B4B;
 
   --color-border: #D3D1C7;
 
-  --color-button-primary: #73ad2d;
-  --color-button-secondary: #558a29;
+  --color-button-primary: #73AD2D;
+  --color-button-secondary: #558A29;
 
   --color-opacit-text: rgba(95, 94, 90, 0.6);
 
-  --color-moisture-wet: #E6F1FB;
-  --color-moisture-optimal: #EAF3DE;
-  --color-moisture-dry: #FAEEDA;
-  --color-moisture-danger: #FCEBEB;
+  --color-moisture-wet: #D2E3F4;
+  --color-moisture-wet-b: #BACBDB;
+  --color-moisture-optimal: #E2F9C8;
+  --color-moisture-optimal-b: #C1E09F;
+  --color-moisture-dry: #F9DDAB;
+  --color-moisture-dry-b: #DCC18F;
+  --color-moisture-danger: #FFD8D8;
+  --color-moisture-danger-b: #E0A7A7;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
