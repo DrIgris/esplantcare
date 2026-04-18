@@ -7,7 +7,6 @@ const cormorant = Cormorant({
   subsets: ['latin'],
   variable: '--font-heading',
 })
-
 const mulish = Mulish({
   weight: ['300', '400', '500', '600'],
   subsets: ['latin'],

@@ -12,11 +12,15 @@
   --color-text-primary: #2C2C2A;
   --color-text-secondary: #5F5E5A;
   --color-text-important: #A94B4B;
+  --color-text-git: #43179E;
 
   --color-border: #D3D1C7;
 
   --color-button-primary: #73AD2D;
   --color-button-secondary: #558A29;
+  --color-button-git: #C898FD;
+  --color-git-border: #8534F3;
+
 
   --color-opacit-text: rgba(95, 94, 90, 0.6);
 
