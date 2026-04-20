@@ -1,9 +1,15 @@
 import { plant } from "@/types/plantItem";
 import { PiPlantLight } from "react-icons/pi";
+import clsx from "clsx";
 
 export default function PlantCard({plant}: {plant: plant}) {
     return (
-    <div className="flex flex-row border-1 rounded m-2 border-border items-center">
+    <div className={clsx("flex flex-row border-2 rounded m-2 items-center px-4", {
+        "bg-moisture-wet border-moisture-wet-b" : plant.moisturePerc >= 90,
+        "bg-moisture-optimal border-moisture-optimal-b" : plant.moisturePerc < 90 && plant.moisturePerc > 50,
+        "bg-moisture-dry border-moisture-dry-b" : plant.moisturePerc < 50 && plant.moisturePerc > 25,
+        "bg-moisture-danger border-moisture-danger-b" : plant.moisturePerc < 25,
+    })}>
         <PiPlantLight size="2em"/>
         <div className="flex flex-col ml-2 mr-2">
             <div className="flex flex-row items-center justify-between">
