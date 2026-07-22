@@ -6,6 +6,7 @@
 
   --color-background: #F7F6F2;
   --color-panel: #F0EFE8;
+  --color-panel-dark: #E2E0D0;
   --color-special-panel: #EAF3DE;
 
   --color-text-title: #639922;
@@ -17,10 +18,13 @@
   --color-border: #D3D1C7;
 
   --color-button-primary: #73AD2D;
+  --color-button-primary-desaturated: #8DB45D;
   --color-button-secondary: #558A29;
   --color-button-git: #C898FD;
   --color-git-border: #8534F3;
 
+  --color-cancel-button: #707270;
+  --color-cancel-button-hover: #383938;
 
   --color-opacit-text: rgba(95, 94, 90, 0.6);
 

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/refs */
 'use client';
 
 import { autoPlacement, autoUpdate, offset, useFloating } from '@floating-ui/react-dom';
@@ -23,15 +24,13 @@ export default function PassField({ password, setPassword}: props) {
         middleware: [offset(8), autoPlacement({allowedPlacements: ['bottom', 'left']},)],
     });
 
-
     return(
         <div id='passfield' className='flex flex-col'>
             <label className="font-body text-text-secondary mt-4">
             Password
             </label>
             <input type="password" ref={refs.setReference} onFocus={() => setFocused(true)} onBlur={() => setFocused(false)} name="password" value={password} onChange={(e) => setPassword(e.target.value)} required placeholder="••••••••" className="text-text-secondary  pt-1 pb-2 px-2 align-middle font-body border-2 border-border bg-panel rounded-lg" />
-            {focused && (
-            <div className='border-2 border-border rounded-2xl bg-panel px-1' style={floatingStyles} ref={refs.setFloating}>
+            <div className='border-2 border-border rounded-2xl bg-panel px-1' style={{...floatingStyles, visibility: focused ? 'visible' : 'hidden'}} ref={refs.setFloating}>
                 {criteria.map(({ id, label, test }) => {
                     const passed = test(password)
                     return (
@@ -44,7 +43,6 @@ export default function PassField({ password, setPassword}: props) {
                     )
                 })}
             </div>
-            )}
         </div>
     );
 }

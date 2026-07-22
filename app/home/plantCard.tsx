@@ -11,7 +11,7 @@ export default function PlantCard({plant}: {plant: plant}) {
         "bg-moisture-danger border-moisture-danger-b" : plant.moisturePerc < 25,
     })}>
         <PiPlantLight size="2em"/>
-        <div className="flex flex-col ml-2 mr-2">
+        <div className="cursor-pointer flex flex-col ml-2 mr-2">
             <div className="flex flex-row items-center justify-between">
                 <span className="font-heading text-2xl font-medium text-text-primary">{plant.name}</span>
                 <span className="text-text-primary font-body">{plant.moisturePerc}%</span> 
