@@ -39,3 +39,7 @@ export async function updateMeasure({ moisture, p_id } : { moisture : number; p_
         WHERE p_id = ${p_id}
     `;
 }
+
+export async function getUser(email : string) {
+    const user_id = await sql`SELECT user_id FROM Users WHERE email = ${email}`;
+}
