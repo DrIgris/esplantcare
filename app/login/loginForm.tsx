@@ -58,7 +58,7 @@ export default function LoginForm() {
                 <span className='text-sm text-center text-text-important'>Invalid email or password format.</span>
             </div>)}
             
-            <button type="submit" className="bg-button-primary border-3 w-fit font-body font-light text-2xl px-6  py-0.5 mt-30 lg:mt-6 text-special-panel border-button-secondary rounded-xl transform hover:bg-text-title active:translate-y-1 active:translate-x-1">Log In</button>
+            <button type="submit" className="bg-button-primary border-3 w-fit font-body font-light text-2xl px-4  py-0.5 mt-30 lg:mt-6 text-special-panel border-button-secondary rounded-xl transform hover:bg-text-title active:translate-y-1 active:translate-x-1">Continue</button>
         </form>
         );
 }
